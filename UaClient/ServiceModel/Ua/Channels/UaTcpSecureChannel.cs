@@ -39,7 +39,7 @@ namespace Workstation.ServiceModel.Ua.Channels
     /// <summary>
     /// A secure channel for communicating with OPC UA servers using the UA TCP transport profile.
     /// </summary>
-    public class UaTcpSecureChannel : UaTcpTransportChannel, IRequestChannel
+    public class UaTcpSecureChannel : /*UaTcpTransportChannel,*/ CommunicationObject, IRequestChannel
     {
         /// <summary>
         /// The default timeout for requests.
